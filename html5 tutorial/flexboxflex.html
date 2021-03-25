@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS-Flexbox</title>
+
+<style>
+    *{
+        padding: 0;
+        margin:0;
+        box-sizing:border-box;
+         }
+
+.container{
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       min-height:600px ;
+        background: rgb(7, 7, 7);
+         }
+
+    .box {
+        text-align: center;
+        background:pink;
+        width: 100px;
+        height: 50px;
+        border: 1px solid rgb(226, 230, 23);
+        margin: 10px;
+
+    }
+
+.box-1{
+  /*  order: 1;*/
+    background-color: red;
+    /*flex-grow: 1; */
+
+}
+.box-2{
+    /* order: 2; */
+    background-color: rgb(14, 28, 155);
+    /* align-self:flex-end; */
+    flex-grow: 1;
+}
+    .box-3{
+    /* order: 3; */
+        background-color: rgb(17, 146, 80);
+        /*flex-grow: 1; */
+    }
+    .box-4{
+        background-color:rgb(199, 12, 183)
+     
+    }
+</style>
+</head>
+<body>
+    <div class ="container">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class ="box box-3"></div>
+        <div  class ="box box-4"></div>
+    </div>
